@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/dfcreative/has-hover/issues"
   },
-  "homepage": "https://github.com/dfcreative/has-hover#readme"
+  "homepage": "https://github.com/dfcreative/has-hover#readme",
+  "dependencies": {
+    "is-browser": "^2.0.1"
+  }
 }

@@ -1,12 +1,13 @@
 'use strict'
 
+var isBrowser = require('is-browser')
 var hasHover
 
 if (typeof global.matchMedia === 'function') {
-	hasHover = global.matchMedia('(hover: hover)').matches || global.matchMedia('(any-hover: hover)').matches
+	hasHover = !global.matchMedia('(hover: none)').matches
 }
 else {
-	hasHover = false
+	hasHover = isBrowser
 }
 
 module.exports = hasHover

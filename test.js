@@ -1,7 +1,7 @@
 'use strict'
 
-const hasHover = require('./')
+var hasHover = require('./')
 
 console.log(hasHover)
 
-if (hasHover) throw Error('Node should not have hover')
+if (!process.browser && hasHover) throw Error('Node should not have hover')
