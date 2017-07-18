@@ -4,7 +4,8 @@
   "description": "Check if hover is available on the current device",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "build": "browserify example.js | indexhtmlify > index.html"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,9 @@
   "homepage": "https://github.com/dfcreative/has-hover#readme",
   "dependencies": {
     "is-browser": "^2.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "indexhtmlify": "^1.3.1"
   }
 }
