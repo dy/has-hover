@@ -1,6 +1,6 @@
 {
   "name": "has-hover",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check if hover is available on the current device",
   "main": "index.js",
   "scripts": {
